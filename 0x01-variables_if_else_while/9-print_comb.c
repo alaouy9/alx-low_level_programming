@@ -9,22 +9,22 @@
  */
 int main(void)
 {
-    int num = 0;
+	int num = 0;
 
-    while (num <= 9)
-    {
-        putchar(num + '0'); /* Print the current digit */
+	while (num <= 9)
+	{
+		putchar(num + '0'); /* Print the current digit */
 
-        if (num < 9)
-        {
-            putchar(','); /* Print a comma if it's not the last digit */
-            putchar(' '); /* Print a space */
-        }
+		if (num < 9)
+		{
+			putchar(','); /* Print a comma if it's not the last digit */
+			putchar(' '); /* Print a space */
+		}
 
-        num++;
-    }
+		num++;
+	}
 
-    putchar('\n');
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
