@@ -3,19 +3,23 @@
 /**
  * main - Entry point
  *
+ * Description: Prints single-digit numbers in base 10, followed by a new line.
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int num = 0;
+    int num;
 
-	while (num <= 9)
-	{
-		putchar(num + '0'); // Convert the integer to its character representation
-		num++;
-	}
+    num = 0;
 
-	putchar('\n');
+    while (num <= 9)
+    {
+        putchar(num + '0'); /* Convert the integer to its character representation */
+        num++;
+    }
 
-	return (0);
+    putchar('\n');
+
+    return (0);
 }
