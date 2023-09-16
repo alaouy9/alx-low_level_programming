@@ -1,31 +1,32 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Print all possibe combinations of two digit numbers
+ *        using putchar
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
+
 int main(void)
 {
-    int digit1, digit2, digit3;
+	int i, j;
 
-    for (digit1 = 0; digit1 <= 8; digit1++)
-    {
-        for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
-        {
-            for (digit3 = digit2 + 1; digit3 <= 9; digit3++)
-            {
-                putchar(digit1 + '0');
-                putchar(digit2 + '0');
-
-                if (digit1 != 8 || digit2 != 9 || digit3 != 9)
-                {
-                    putchar(',');
-                    putchar(' ');
-                }
-            }
-        }
-    }
-    putchar('\n');
-    return (0);
+	for (i = 0; i < 99; i++)
+	{
+		for (j = i + 1; j < 100; j++)
+		{
+			putchar('0' + i / 10);
+			putchar('0' + i % 10);
+			putchar(' ');
+			putchar('0' + j / 10);
+			putchar('0' + j % 10);
+			if (i < 98)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
