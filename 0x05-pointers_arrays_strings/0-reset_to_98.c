@@ -1,9 +1,9 @@
 /**
- * the main function: reset_to_98
+ * reset_to_98 - main function
  *
- * description: reset the value of the address to 98
+ * Description: 'reset the value of the address to 98'
  *
- * @n: the variable n reseted to 98
+ * @n: the var to reset
  */
 
 void reset_to_98(int *n)
